@@ -3,3 +3,6 @@ konamigwt/.project
 konamigwt/.settings
 konamigwt/target
 .DS_Store
+KonamiGWTDemo/war/pockonamigwt
+KonamiGWTDemo/war/WEB-INF/classes/
+KonamiGWTDemo/war/WEB-INF/deploy/
