@@ -1,6 +1,8 @@
-A gwt implementation for konami code.
+A gwt implementation for [Konami code](http://en.wikipedia.org/wiki/Konami_Code).
 
-How use it ?
+[Try demo !](http://nfrancois.github.com/KonamiGWTDemo/KonamiGWTDemo.html)
+
+# How use it ?
 * Download the library
 * Add it to the project classpath
 * Add the module to your '.gwt.xml' module file :
