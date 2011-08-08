@@ -1,18 +1,14 @@
 package com.googlecode.konamigwt.demo.client;
 
-import gwt.g2d.client.media.Audio;
-
 import com.google.gwt.core.client.EntryPoint;
-import com.google.gwt.core.client.GWT;
 import com.google.gwt.event.dom.client.ClickEvent;
 import com.google.gwt.event.dom.client.ClickHandler;
 import com.google.gwt.event.dom.client.KeyCodes;
 import com.google.gwt.event.dom.client.KeyUpEvent;
 import com.google.gwt.event.dom.client.KeyUpHandler;
+import com.google.gwt.media.client.Audio;
 import com.google.gwt.user.client.DOM;
 import com.google.gwt.user.client.Timer;
-import com.google.gwt.user.client.Window;
-import com.google.gwt.user.client.rpc.AsyncCallback;
 import com.google.gwt.user.client.ui.Button;
 import com.google.gwt.user.client.ui.DialogBox;
 import com.google.gwt.user.client.ui.HTML;
@@ -90,20 +86,27 @@ public class KonamiGWTDemo implements EntryPoint {
 			}
 		});
 		
+		// Quick and Dirty implémentation
 		new Konami(new KonamiHandler() {
 			@Override
 			public void onKonamiCodePerformed() {
 				final Image image = new Image("media/street-fighter.gif");
-				final Audio audio = new Audio("media/hadoken.ogg");
 				DOM.appendChild(RootPanel.get().getElement(), image.getElement());
-				DOM.appendChild(RootPanel.get().getElement(), audio.getElement());
-				audio.play();
+
+				final Audio audio = Audio.createIfSupported();
+				if(audio != null){
+					audio.setSrc("media/hadoken.ogg");
+					DOM.appendChild(RootPanel.get().getElement(), audio.getElement());
+					audio.play();
+				}
 				Timer timer = new Timer(){
 
 					@Override
 					public void run() {
 						DOM.removeChild(RootPanel.get().getElement(), image.getElement());
-						DOM.removeChild(RootPanel.get().getElement(), audio.getElement());
+						if(audio != null){
+							DOM.removeChild(RootPanel.get().getElement(), audio.getElement());
+						}
 					}
 					
 				};
