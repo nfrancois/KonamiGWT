@@ -23,3 +23,22 @@ new Konami(new KonamiHandler() {
         }
 }).start();
 ```
+
+# Maven artifact
+
+```xml
+<repositories>
+	<repository>
+		<id>KonamiGWT-releases</id>
+		<url>https://github.com/nfrancois/KonamiGWT/raw/master/maven/release</url>
+	</repository>
+</repositories>
+```
+
+```xml
+<dependency>
+	<groupId>com.googlecode.konamigwt</groupId>
+	<artifactId>konamigwt</artifactId>
+	<version>1.0.1</version>
+</dependency>
+```
