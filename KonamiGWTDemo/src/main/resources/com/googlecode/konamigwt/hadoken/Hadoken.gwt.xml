@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+    "THE BEER-WARE LICENSE" (Revision 42):
+    Nicolas FRANCOIS wrote this software. As long as you retain this notice
+    you can do whatever you want with this stuff. If we meet some day,
+    and you think this stuff is worth it, you can buy me a beer in
+    return.
+
+-->
+<module rename-to='hadoken'>
+	<!-- Inherit the core Web Toolkit stuff. -->
+	<inherits name='com.google.gwt.user.User' />
+
+	<inherits name='com.google.gwt.user.theme.standard.Standard' />
+
+	<!-- Other module inherits -->
+	<inherits name='com.googlecode.konamigwt.KonamiGWT' />
+	
+	<!-- Specify the app entry point class. -->
+	<entry-point class='com.googlecode.konamigwt.hadoken.client.Hadoken' />
+
+	<!-- Specify the paths for translatable code -->
+	<source path='client' />
+	<source path='shared' />
+
+</module>

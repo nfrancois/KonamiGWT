@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+    "THE BEER-WARE LICENSE" (Revision 42):
+    Nicolas FRANCOIS wrote this software. As long as you retain this notice
+    you can do whatever you want with this stuff. If we meet some day,
+    and you think this stuff is worth it, you can buy me a beer in
+    return.
+
+-->
+<!DOCTYPE web-app
+    PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+    "http://java.sun.com/dtd/web-app_2_3.dtd">
+
+<web-app>
+  
+ 
+  <!-- Default page to serve -->
+  <welcome-file-list>
+    <welcome-file>Hadoken.html</welcome-file>
+  </welcome-file-list>
+
+</web-app>

@@ -40,5 +40,6 @@ new Konami(new KonamiHandler() {
 	<groupId>com.googlecode.konamigwt</groupId>
 	<artifactId>konamigwt</artifactId>
 	<version>1.0.1</version>
+	<scope>provided</scope>
 </dependency>
 ```

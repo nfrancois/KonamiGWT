@@ -1,9 +1,9 @@
 .DS_Store
-konamigwt/.classpath
-konamigwt/.project
-konamigwt/.settings
-konamigwt/target
-KonamiGWTDemo/war/konamigwtdemo
-KonamiGWTDemo/war/WEB-INF/classes/
-KonamiGWTDemo/war/WEB-INF/deploy/
-
+.classpath
+.project
+.settings
+target
+KonamiGWTDemo/src/main/webapp/WEB-INF/classes
+KonamiGWTDemo/src/main/webapp/WEB-INF/deploy/
+KonamiGWTDemo/src/main/webapp/WEB-INF/hadoken
+KonamiGWTDemo/src/main/webapp/hadoken
